@@ -2,7 +2,7 @@ package zone.sesh.Person;
 
 import java.lang.String;
 import java.util.logging.Logger;
-
+import java.lang.InterruptedException;
 
 public class Person {
 
@@ -74,7 +74,7 @@ public class Person {
         gender = value;
     }
 
-    private static void main() {
+    public static void main(String[] args) throws InterruptedException {
         Person p = new Person("Colton Aubrey Hooke", 21, 173, 82, "Hazel", "MALE");
         Logger l = Logger.getLogger(Person.class.getName());
         l.info("Name: " + p.getName());
